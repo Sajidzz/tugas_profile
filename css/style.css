@@ -1,0 +1,148 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Import Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #1B262C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-items {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #8d8d8d;
+    font-family: "Concert One";
+}
+
+.nav-items a:hover {
+    color: white;
+}
+
+.event  {
+    list-style-type: none;
+    background-color: #3282B8;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    font-family: "Concert One";
+    border: none;
+    outline: none;
+}
+
+.event:hover {
+    background-color: #fff;
+    color: #1B262C;
+
+}
+
+.container {
+    background-color: #0F4C75;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero img {
+    border-radius: 10px;
+    width: 250px;
+    box-shadow:-3px 3px 8px 0px rgba(0, 0, 0, 0.8);
+    display: block;
+}
+
+.items {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.items h1 {
+    font-family: "Kanit";
+    margin: 15px auto;
+    color: white;
+}
+
+.Note {
+    background-color: #494949;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.primary {
+    font-family: "Roboto Mono";
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #3FC1C9;
+    transition: .3s ease-in;
+}
+
+.primary:hover {
+    background-color: #3FC1C9;
+}
+
+footer {
+    background-color: #1B262C;
+    padding: 20px;
+    font-family: "Concert One";
+    color: white;
+    text-align: center;
+}
+
+.floating-image {
+    animation: float 3s ease-in-out infinite; 
+}
+
+.dark-theme {
+    background-color: #1B262C;
+    color: #fff;
+}
+
+.light-theme {
+    background-color: #3282B8;
+    color: #fff;
+}
+
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
